@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculoid Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>The best price</h2>
+            <p>Save up to 40%</p>
+        </div>
+        <main id="content">
+            <section id="calculations">
+                <div class="qty">
+                    <label for="quantity">Quantity</label>
+                    <div class="input">
+                        <input type="range" name="quantity" id="quantity" min="1" max="40" step="1" value="1">
+                        <p class="input-value" id="input-value"></p>
+                    </div>
+                </div>
+                <div class="results" id="results">
+               <!-- Calculations goes here -->
+                </div>
+            </section>
+            <section class="payment">
+                <div class="payment-method">
+                    <div class="paypal">
+                        <div>
+                            <input type="radio" name="payment-method" id="paypal" value="paypal">
+                            <label for="paypal">Paypal</label>
+                        </div>
+                        <img src="/img/Paypal.png" alt="paypal">
+                    </div>
+                    <div class="credit-card">
+                        <div>
+                            <input type="radio" name="payment-method" id="credit-card" value="cred-card">
+                            <label for="credit-card">Credit card</label>
+                        </div>
+                        <img src="/img/Debit-card.png" alt="credit card">
+                    </div>
+                </div>
+                <button>Payment (USD)</button>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
